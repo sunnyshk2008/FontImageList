@@ -1,0 +1,12 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: fontimagelist.rs_cannot_gen_icon_for_itm
+msgid "Cannot generate icons. Wrong codepoint \"%\" at item: %d."
+msgstr ""
+
+#: fontimagelist.rs_font_not_found
+#, object-pascal-format
+msgid "The font \"%s\" is not installed on this computer."
+msgstr ""
+
