@@ -1,7 +1,5 @@
 ## <img src="images/tfontimagelist.png" /> TFontImageList
 
----
-
 The TFontImageList is a Lazarus component that store gryphs/images used by graphic controls. The component generates its own images using an installed font.
 It work just like a TImageList but using `code point` of installed font on development computer. The images are built in design-time
 and dont require the font installed on deployment. So you dont need redistribute the font with your software or access the internet to get it. 
@@ -27,7 +25,7 @@ There is two packages availables, use them according your needs. Do not install 
 
 ## ⚙️ Steps
 1. Find out the desired codepoints for build the images. Usually the font owners provides a way or a list of them. They also can be found using a simple charmap program.
-![TFontImageList Component](./images/tfontimagelist.png)
+![Any charmap program can be used to show the codepoints.](./images/charmap_img.png)
 
 2. Put the TFontImageList on TForm/TFrame/TDataModule, change the `Width` and the `Height` with the required image geometry.
 3. Go to `Options` property(TFontImageListOptions) if you want the colored background or keep the `clNone` for transparente background.
@@ -37,8 +35,9 @@ There is two packages availables, use them according your needs. Do not install 
 
 6. Every time you change the `Codepoints` property at design-time then all images of list is generated. Dont forget revisit this property after change some other property.
 7. Save your form for persistence of the generated images.
-8. Its all, enjoy.
 ![Generated images](./images/gen_img.png)
+
+8. Its all, enjoy.
  
 ## ⌨️ Copyright notice
 © 2025 Humberto Teófilo, All Rights Reserved.   
