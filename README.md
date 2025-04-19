@@ -5,7 +5,7 @@ It work just like a TImageList but using `code point` of installed font on devel
 and dont require the font installed on deployment. So you dont need redistribute the font with your software or access the internet to get it. 
 Some fonts are made for this purpose and we take advantage of this for generate a monochrome glyphs/images like websites and mobile apps does.
  
-> Just in the case you dont know what we are taking about you must read about at [Code point](https://wikipedia.org/wiki/Code_point/). 
+> Just in the case you dont know what we are talking about you must read at [Code point](https://wikipedia.org/wiki/Code_point/). 
 
 ## 🔗 Visit
 Some recommended fonts with a lot of icons for use, find out the `code point` of the icon, never the `icon name`.
