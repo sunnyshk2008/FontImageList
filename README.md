@@ -1,9 +1,9 @@
 ## <img src="images/tfontimagelist.png" /> TFontImageList
 
-The TFontImageList is a Lazarus component that store gryphs/images used by graphic controls. The component generates its own images using an installed font.
+The TFontImageList is a Lazarus component that store glyphs/images used by graphic controls. The component generates its own images using an installed font.
 It work just like a TImageList but using `code point` of installed font on development computer. The images are built in design-time
 and dont require the font installed on deployment. So you dont need redistribute the font with your software or access the internet to get it. 
-Some fonts are made for this purpose and we take advantage of this for generate a monochrome gryphs/images like websites and mobile apps does.
+Some fonts are made for this purpose and we take advantage of this for generate a monochrome glyphs/images like websites and mobile apps does.
  
 > Just in the case you dont know what we are taking about you must read about at [Code point](https://wikipedia.org/wiki/Code_point/). 
 
