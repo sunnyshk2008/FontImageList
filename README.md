@@ -28,7 +28,7 @@ There is two packages availables, use them according your needs. Do not install 
 ![Any charmap program can be used to show the codepoints.](./images/charmap_img.png)
 
 2. Put the TFontImageList on TForm/TFrame/TDataModule, change the `Width` and the `Height` with the required image geometry.
-3. Go to `Options` property(TFontImageListOptions) if you want the colored background or keep the `clNone` for transparente background.
+3. Go to `Options` property(TFontImageListOptions) if you want the colored background or keep the `clNone` for transparent background.
 4. Go To `FontSource` property for choose the font/color/height of your images. The font must be already installed at this moment.
 5. Go to `Codepoints` property and write the codepoints of images. For each line only one codepoint is written and must be like: `e88a` or `$e88a`.
 ![Property settings](./images/props_img.png)
